@@ -36,3 +36,6 @@ Write **SQL queries** to define the **database schema** (create tables, set cons
 ---
 
 ✨ Once complete, this schema will serve as the **foundation** for seeding the database with sample data in later tasks.  
+
+
+ERD/images/Airbnb_clone.jpg
