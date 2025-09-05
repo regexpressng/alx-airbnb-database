@@ -4,7 +4,13 @@
 
 SELECT Bookings.id, User.email FROM Bookings INNER JOIN Bookings On Bookings.user_id=User.id;
 
-SELECT Bookings.id, User.email FROM Bookings INNER JOIN Bookings On Bookings.user_id=User.id;
+SELECT 
+    Bookings.id, 
+    User.email 
+FROM 
+    Bookings 
+INNER JOIN 
+    Bookings On Bookings.user_id=User.id;
 
 SELECT 
     Properties.id AS property_id,
