@@ -19,7 +19,8 @@ SELECT
     Reviews.comment AS review_comment,
     Reviews.rating AS review_rating
 FROM Properties
-LEFT JOIN Reviews ON Properties.id = Reviews.property_id;
+LEFT JOIN Reviews ON Properties.id = Reviews.property_id
+ORDER BY Properties.name, Reviews.rating;
 
 SELECT 
     Users.id AS user_id,
