@@ -3,6 +3,14 @@ CREATE TYPE user_role AS ENUM ('guest', 'host', 'admin');
 CREATE TYPE booking_status AS ENUM ('pending', 'confirmed', 'canceled');
 CREATE TYPE payment_method AS ENUM ('credit_card', 'paypal', 'stripe');
 
+SELECT e.enumlabel
+FROM pg_enum e
+JOIN pg_type t ON e.enumtypid = t.oid
+WHERE t.typname = 'payment_method';
+
+
+DROP TYPE booking_status;
+
 -- Users Table
 CREATE TABLE users (
     user_id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
